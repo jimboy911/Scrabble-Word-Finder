@@ -1,5 +1,6 @@
 #Scrabble Word Finder Challenge
 #from - http://wiki.openhatch.org/Scrabble_challenge
+#current state should be run from the command line with one argument
 
 #Step 1: open and read the sowpods.txt file
 #create a function to open the file and store all the data in a list
