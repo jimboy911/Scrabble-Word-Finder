@@ -10,10 +10,9 @@ def openFile():
     this function also strips the carriage return from each entry in the list
     to prepare it for the word check functions."""
     
-    files = open("sowpods.txt", "r") #opens the target file / using testlist for now
-    sowpodsList = files.readlines() #takes files and reads every line, storing in a list
-    files.close()
-    sowpodsList3 = []   #prepares a list to place or "append" the words into
+    with open("sowpods.txt", "r") as files: #opens the sowpods list, as "files"; should automatically close it, too
+        sowpodsList = files.readlines() #takes files and reads every line, storing in a list
+        sowpodsList3 = []   #prepares a list to place or "append" the words into
 
     for i in sowpodsList: #iterates through each word in the list
         sowpodsList2 = i.strip() #strips the carriage return
