@@ -12,6 +12,7 @@ def openFile():
     
     files = open("sowpods.txt", "r") #opens the target file / using testlist for now
     sowpodsList = files.readlines() #takes files and reads every line, storing in a list
+    files.close()
     sowpodsList3 = []   #prepares a list to place or "append" the words into
 
     for i in sowpodsList: #iterates through each word in the list
